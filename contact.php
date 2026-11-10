@@ -1,48 +1,108 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title><?php echo(site_title) ?> | تماس با ما</title>
-        <link type="text/css" href="<?php echo(url('theme/fonts/fonts.css')); ?>" rel="stylesheet">
-        <script type="text/javascript" src="<?php echo(url('visit')); ?>"></script>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" >
-        <meta http-equiv="Content-Language" content="fa">
-        <meta name="description" content="<?php echo($options['chat_description']); ?>">
-        <meta name="keywords" content="<?php echo($options['chat_keywords']); ?>">
-        <style>
-            body{color:#3F3F3F;font-family:Byekan;font-size:16px;background:#3F3F3F}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}h1{font-family:Byekan;text-align:center;font-size:40px;padding:0;margin:0 0 20px;position:relative;color:#8C8C8C}h1:after{font-size:25px;color:#D6CFCB;content:'&';text-align:center;display:block;width:100%;font-family:Byekan;text-shadow:0 1px 0 #fff}h1:before{position:absolute;bottom:15px;content:' ';text-align:center;display:block;height:2px;width:100%;background:-moz-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%);background:-webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(42%,rgba(182,180,180,0.7)),color-stop(43%,rgba(180,178,178,0)),color-stop(50%,rgba(168,166,166,0)),color-stop(57%,rgba(180,178,178,0)),color-stop(58%,rgba(182,180,180,0.7)),color-stop(90%,rgba(238,237,237,0.3)),color-stop(100%,rgba(255,255,255,0)));background:-webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%);background:-o-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%);background:-ms-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%);background:linear-gradient(left,rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%)}#content{position:relative;margin:50px auto;width:400px;min-height:200px;z-index:100;padding:30px;border:1px solid #383838;background:#D1D1D1;background:-moz-repeating-linear-gradient(-45deg,#EFC1CB,#EFC1CB 30px,#F2F2F2 30px,#F2F2F2 40px,#C2E8F5 40px,#C2E8F5 70px,#F2F2F2 70px,#F2F2F2 80px);background:-webkit-repeating-linear-gradient(-45deg,#EFC1CB,#EFC1CB 30px,#F2F2F2 30px,#F2F2F2 40px,#C2E8F5 40px,#C2E8F5 70px,#F2F2F2 70px,#F2F2F2 80px);background:-o-repeating-linear-gradient(-45deg,#EFC1CB,#EFC1CB 30px,#F2F2F2 30px,#F2F2F2 40px,#C2E8F5 40px,#C2E8F5 70px,#F2F2F2 70px,#F2F2F2 80px);background:repeating-linear-gradient(-45deg,#EFC1CB,#EFC1CB 30px,#F2F2F2 30px,#F2F2F2 40px,#C2E8F5 40px,#C2E8F5 70px,#F2F2F2 70px,#F2F2F2 80px);-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;-webkit-box-shadow:0 1px 6px #3F3F3F;-moz-box-shadow:0 1px 6px #3F3F3F;box-shadow:0 1px 6px #3F3F3F}#content:after{background:#F9F9F9;margin:10px;position:absolute;content:" ";bottom:0;left:0;right:0;top:0;z-index:-1;border:1px #E5E5E5 solid;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px}input:required,select:required,textarea:required{-moz-box-shadow:none;-webkit-box-shadow:none;-o-box-shadow:none;box-shadow:none}input:not([type="submit"]),select:not([type="submit"]),textarea{outline:none;display:block;width:380px;padding:4px 8px;border:1px dashed #DBDBDB;color:#3F3F3F;font-family:Byekan;font-size:14px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;-webkit-transition:background .2s linear,box-shadow .6s linear;-moz-transition:background .2s linear,box-shadow .6s linear;-o-transition:background .2s linear,box-shadow .6s linear;transition:background .2s linear,box-shadow .6s linear}input:not([type="submit"]):active,select:not([type="submit"]):active,textarea:active,input:not([type="submit"]):focus,select:not([type="submit"]):focus,textarea:focus{background:#F7F7F7;border:dashed 1px #969696;-webkit-box-shadow:2px 2px 7px #E8E8E8 inset;-moz-box-shadow:2px 2px 7px #E8E8E8 inset;box-shadow:2px 2px 7px #E8E8E8 inset}input:not([type="submit"]),select:not([type="submit"]){height:20px}::-webkit-input-placeholder,::-webkit-select-placeholder{color:#BABABA;font-style:italic}input:-moz-placeholder,select:-moz-placeholder,textarea:-moz-placeholder{color:#BABABA;font-style:italic}textarea{min-height:150px;resize:vertical}label{color:#7F7E7E;-webkit-transition:color 1s ease;-moz-transition:color 1s ease;transition:color 1s ease}label:hover{color:#191919}label:before{color:#C1BFBD;-webkit-transition:color 1s ease;-moz-transition:color 1s ease;transition:color 1s ease}label:hover:before{color:#969696;-webkit-transition:color 1s ease;-moz-transition:color 1s ease;transition:color 1s ease}select{color:#7F7E7E;-webkit-transition:color 1s ease;-moz-transition:color 1s ease;transition:color 1s ease}select:hover{color:#191919}select:before{color:#C1BFBD;-webkit-transition:color 1s ease;-moz-transition:color 1s ease;transition:color 1s ease}select:hover:before{color:#969696;-webkit-transition:color 1s ease;-moz-transition:color 1s ease;transition:color 1s ease}p{margin-bottom:20px;direction:rtl}.indication{color:#878787;font-size:12px;font-style:italic;text-align:right;padding-right:10px}.required{font-size:20px;float:right;color:#E5224C}input[type=submit]{margin-right:235px;cursor:pointer;background:none;border:none;font-family:Byekan;color:#767676;font-size:18px;padding:10px 4px;border:1px solid #E0E0E0;text-shadow:0 1px 1px #E8E8E8;background:#f7f7f7;background:-moz-linear-gradient(top,rgba(247,247,247,1) 1%,rgba(242,242,242,1) 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(1%,rgba(247,247,247,1)),color-stop(100%,rgba(242,242,242,1)));background:-webkit-linear-gradient(top,rgba(247,247,247,1) 1%,rgba(242,242,242,1) 100%);background:-o-linear-gradient(top,rgba(247,247,247,1) 1%,rgba(242,242,242,1) 100%);background:-ms-linear-gradient(top,rgba(247,247,247,1) 1%,rgba(242,242,242,1) 100%);background:linear-gradient(top,rgba(247,247,247,1) 1%,rgba(242,242,242,1) 100%);-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 1px 1px #FFF inset,0 0 0 5px #EAEAEA;-moz-box-shadow:0 1px 1px #FFF inset,0 0 0 5px #EAEAEA;box-shadow:0 1px 1px #FFF inset,0 0 0 5px #EAEAEA;-webkit-transition:all .2s linear;-moz-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear}input[type=submit]:hover{color:#686868;border-color:#CECECE;background:#f4f4f4;background:-moz-linear-gradient(top,rgba(244,244,244,1) 0%,rgba(242,242,242,1) 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(244,244,244,1)),color-stop(100%,rgba(242,242,242,1)));background:-webkit-linear-gradient(top,rgba(244,244,244,1) 0%,rgba(242,242,242,1) 100%);background:-o-linear-gradient(top,rgba(244,244,244,1) 0%,rgba(242,242,242,1) 100%);background:-ms-linear-gradient(top,rgba(244,244,244,1) 0%,rgba(242,242,242,1) 100%);background:linear-gradient(top,rgba(244,244,244,1) 0%,rgba(242,242,242,1) 100%);-webkit-box-shadow:0 1px 1px #FFF inset,0 0 0 5px #E0E0E0;-moz-box-shadow:0 1px 1px #FFF inset,0 0 0 5px #E0E0E0;box-shadow:0 1px 1px #FFF inset,0 0 0 5px #E0E0E0}input[type=submit]:active,input[type=submit]:focus{position:relative;top:1px;color:#515151;background:#eaeaea;background:-moz-linear-gradient(top,rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(234,234,234,1)),color-stop(100%,rgba(242,242,242,1)));background:-webkit-linear-gradient(top,rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);background:-o-linear-gradient(top,rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);background:-ms-linear-gradient(top,rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);background:linear-gradient(top,rgba(234,234,234,1) 0%,rgba(242,242,242,1) 100%);-webkit-box-shadow:0 -1px 1px #FFF inset,0 0 0 5px #E0E0E0;-moz-box-shadow:0 -1px 1px #FFF inset,0 0 0 5px #E0E0E0;box-shadow:0 -1px 1px #FFF inset,0 0 0 5px #E0E0E0}
-        </style>
-    </head>
-    <body><?php if ($options['contact'] == 'true') { ?>
-        <div id="content">
-            <h1> تماس با ما </h1>
-            <form action="<?php echo(url('form/contact')) ?>" method="post"  autocomplete="on">
-                <p><span class="required">*</span> <label for="username" class="iconic user" > نام کاربر </label> <input type="text" name="author" id="author"  required="required" placeholder="نام شما"  /> </p>
-                <input type="hidden" name="ip" value = "<?php echo ip(); ?>">
-                <p> <label for="usermail" class="iconic mail-alt"> ایمیل <span class="required">*</span></label> <input type="email" name="email" id="email" placeholder="ایمیل شما" required  /> </p>
-                <p> <label for="usersite" class="iconic link"> گیرنده </label> <select style="height: 35px; width: 100%;" type="Text" id="rec" name="to">  <?php
-                        $sql->where("type", Users::AdminsType(), 'in');
-                        foreach($sql->get('users', null, array('id', 'name')) as $user){
-                            $sql->where("user", $user['id']);
-                            if ($permissions = $sql->getOne('adminpanel', array('permissions'))){
-                                if (adminpanel::check_Permission('bool', 'letters', $permissions['permissions']) == false) {
-                                    continue;
-                                }
-                                ?>
-                                <option value="<?php echo($user['id']); ?>"> <?php echo($user['name']); ?></option>
-                                <?php
-                            }
-                        }
-                        ?>
-                    </select>
-                </p>
-                <p><span class="required">*</span> <label for="subject" class="iconic quote-alt"> موضوع </label> <input type="text" name="subject" id="subject" required placeholder="موضوع پیام" /> </p>
-                <p><span class="required">*</span> <label for="message" class="iconic comment"> متن  </label> <textarea id="text" name="content" placeholder="متن پیام شما .........."  required="required" ></textarea> </p>
-                <p><span class="required">*</span> <label for="captcha" class="iconic quote-alt"> کدامنیتی </label> <input type="text" name="captcha" id="captcha" required placeholder="کدامنیتی" /> </p>
-                <p><img alt="کد انسان یاب!" src="<?php echo(url('captcha/100/38')); ?>" style="width: 100px;height: 38px;"></p>
-                <p class="indication"> پر کردن تمامی فیلد های ستاره دار<span class="required">*</span> اجباری میباشد .</p>
-                <input  type="submit" value="ارسال" />		
-            </form>		
-        </div> <?php } else echo "<div style=color:white;text-align:center>غیرفعال است</div>"; ?>
-    </body>
-</html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<?php
+if ($_SESSION['captcha-txt'] != $_REQUEST['captcha']) {
+    ?>
+    <script type="text/javascript">
+        alert('تصویر امنیتی را درست وارد نکردید.');
+        history.go(-1);
+    </script>
+    <?php
+    return;
+}
+$author = safe::string($_REQUEST['author']);
+if ($author == "") {
+    ?>
+    <script type="text/javascript">
+        alert('نام خود را وارد نکردید');
+        history.go(-1);
+    </script>
+    <?php
+    return;
+}
+$to = safe::number($_REQUEST['to']);
+if (!Users::CheckId($to)) {
+    header::Go(url('contact'));
+    exit();
+}
+$subject = safe::string($_REQUEST['subject']);
+if ($subject == '') {
+    ?>
+    <script type="text/javascript">
+        alert('یک موضوع برای نامه خود وارد کنید');
+        history.go(-1);
+    </script>
+    <?php
+    exit();
+}
+$email = $_REQUEST['email'];
+$ip = safe::string($_REQUEST['ip']);
+if (!safe::is_email($email)) {
+    $email = '';
+}
+if ($email == '') {
+    ?>
+    <script type="text/javascript">
+        alert('لطفا ایمیل خود را وارد کنید');
+        history.go(-1);
+    </script>
+    <?php
+    exit;
+}
+$content = str_replace("\n", '<br>', strip_tags(addslashes($_REQUEST['content'])));
+$sql->insert('letters', array(
+    'author' => $author,
+    'to' => $to,
+    'subject' => $subject,
+    'time' => time(),
+    'content' => $content,
+    'status' => 0,
+    'email' => $email,
+    'ip' => $ip
+));
+if ($options['send_letters2private_admin'] == 'true') {
+    send2admin($content, $ip, $author, $email, $subject, $to);
+}
+?>
+<script type="text/javascript">
+    alert('با موفقیت ذخیره شد');
+    location.href = "<?php echo(url('contact')); ?>";
+</script>
+<?php
+
+function send2admin($content, $ip, $author, $email, $subject, $to) {
+    global $sql;
+    $note = '<table dir="rtl" cellpadding="3" border="1" align="center">
+	<tr><td><b>ارسال کننده نامه:</b></td><td><b><font color=red>' . $author . '</font></b></td></tr>
+	<tr><td><b>موضوع:</b></td><td><b><font color=red>' . $subject . '</font></b></td></tr>
+	<tr><td><b>ایمیل:</b></td><td><b><font color=red>' . $email . '</font></b></td></tr>
+	<tr><td><b>آی پی:</b></td><td><b><font color=red>' . $ip . '</font></b></td></tr>
+	<tr><td><b>متن نامه:</b></td><td><b><font color=red>' . $content . '</font></b></td></tr>
+	</table><hr>';
+    $sql->where("id", $to);
+    if($row = $sql->getOne('onlines', array('id', 'type', 'roomid'))){
+        if ($row['roomid'] == '1')
+            $row['roomid'] = '-1';
+        $sql->insert('message', array(
+            'user' => -1,
+            'username' => 'SYSTEM [ <b><font color=red>نامه کاربران</font></b> ]',
+            'color' => '000000',
+            'room' => $row['roomid'],
+            'text' => $note,
+            'date' => time(),
+            'to' => $row['id'],
+            'into' => 'pm',
+            'type' => 0
+        ));
+    }
+    $text = "نامه ای جدید در پنل مدیریت دارید\n";
+    $text .='ای پی : '.$ip."\n";
+    $text .='ایمیل : '.$email."\n";
+    $text .= "آدرس : ".url()."\n";
+    $text .= "ارسال کننده نامه :".$author."\n";
+    $text .= "موضوع نامه :".$subject."\n";
+    $text .= "متن نامه :".$content."\t";
+
+             tlg($text,'chat');
+             
+}
+?>

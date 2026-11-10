@@ -1,0 +1,56 @@
+#modalb{position:fixed;bottom:0;left:0;font-family:Byekan;right:0;top:80px;height:0;}
+.modals .input{border: 1px solid #4b3939 !important;
+border-radius: 2px;
+color: rgba(0,0,0,0.75);
+font-family: Byekan;
+margin-left: -26px;
+text-align: left;
+width: 70%;
+margin-right: 0px;
+height: 25px;}
+.modals .input:focus{border:1px solid rgba(0,184,235,0.3);box-shadow:0 0 8px -5px #00b8eb inset}
+.modals div.okreg{font-size:13px}
+.modals span{display:block;float:right;text-align:right;width:25%;margin-top:8px;font-size:13px}
+.modals label{display:block;margin:10px 0}
+.modals .input:disabled{background:#eee;border:1px solid #ddd}
+.modals div{background:#f1f1f1 none repeat scroll 0 0;border-radius:3px;color:#888;font-size:15px;font-weight:700;margin:-15px -25px 0;padding:10px}
+.modals .submit {
+    background: #00b6eb none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    height: 35px;
+    margin-left: -11px;
+    margin-top: 2px;
+    -webkit-transition: all .17s ease 0;
+    transition: all .17s ease 0;
+    width: 120px;
+}
+.modals{font-family:Byekan;background:#fff none repeat scroll 0 0;border:2px solid !important;border-radius:5px;font-family:Byekan;overflow:hidden;padding:20px 30px 10px;position:relative;text-align:center;width:280px;margin:100px auto;direction:rtl}
+#postslist img.avatar{height:50px;margin:0 6px 0 0;vertical-align:top}
+#postslist > div{border-bottom:1px solid #ccc;padding:5px 0}
+#postslist .details{direction:rtl;float:right;margin-right:2px;text-align:right}
+#postslist .useri{color:#fc0505;cursor:pointer;font-weight:700;vertical-align:top}
+#changemod a{background:#56c433;border-radius:5px;box-shadow:0 1px 0 1px #68cc34;color:#fff;cursor:pointer;display:block;float:right;font-size:14px;margin:0 5px;padding:5px 10px;font-size:13px}
+#changemod a.selected{background:#dcdcdc;box-shadow:0 -1px 0 1px #9c9d9c;color:#9c9d9c;margin-top:2px}
+#changemod a.reload{background:#e15f5f none repeat scroll 0 0;box-shadow:0 1px 0 1px #c54343;color:#fefefe}
+#friends img.avatar{height:50px;margin:0 6px 0 0;vertical-align:top}
+#friends .details{direction:rtl;float:right;margin-right:2px;text-align:right}
+#friends .useri{cursor:pointer;font-weight:700;vertical-align:top}
+#social{font-family:Byekan;height:450px}
+#clear{font-family:Byekan;clear:both}
+#friends > div > div{font-family:Byekan;border-bottom:1px solid #eee;padding:5px 0}
+#friends > span{border:1px solid transparent;border-radius:15px;box-shadow:0 2px 2px #c8c8c8;display:block;margin:10px 0;padding:5px}
+#friends > span.fon{background:#56c433;border-color:#208200;color:#fff;font-family:Byekan}
+#friends > span.fof{font-family:Byekan;background:#888;border-color:#555;color:#fff}
+#myposts > div{font-family:Byekan;background:#fff;border:1px solid #aaa;box-shadow:0 0 2px #a3a3a3;direction:rtl;font-size:13px;font-weight:400;line-height:1.8;margin:5px 6px 18px}
+#myposts > div .mpuser{background:#eee;margin:1px;padding:10px;border-bottom:2px solid transparent;color:#555}
+#myposts > div .mpuser a{color:#000}
+#myposts > div .content{color:#333;padding:10px}
+#myposts > div.more,#myposts > div.desc{padding:10px 0;text-align:center}
+#myposts > div.more a {color:#F00}
+.mpuser img{border-radius:17px;float:right;height:33px;margin:-5px 0 0 5px}
+#myposts > div .op{color:#777;overflow:hidden;padding:15px 10px 5px;color:#777;overflow:hidden;padding:15px 10px 5px}
+#myposts > div .op a{background:#e6e6e6;border:1px solid #fff;border-radius:5px;box-shadow:0 0 0 1px #c6c6c6;color:#555;display:block;overflow:hidden;padding:0 10px 2px}

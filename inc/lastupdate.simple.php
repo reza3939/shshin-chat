@@ -1,0 +1,3 @@
+<?php
+$lastupdatetime = "{time}";
+?>

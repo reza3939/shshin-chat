@@ -1,0 +1,64 @@
+<?php
+if(session('admin') != '0'){
+    $theme=$options['admintheme'];
+    $el2=giu('el2');
+    if($el2=='login'){
+        include('pages/admin/login.php');
+    }else{
+        if(!session('id') || session('admin')=='0'){
+            header::Go(url('login'));
+            exit();
+        } 
+        if(!session('adminpanelogin')){
+            session('adminpanelogin','false');
+        }
+        if(session('adminpanelogin')=='false'){
+            session('afterlogin',url('this'));
+            header::Go(url('admin/login'));
+            exit();
+        }
+        //include('inc/classes/host.php');
+        if(session('validtion')!='true'){
+            if(!is_file('inc/config.tmp')){
+                file_put_contents('inc/config.tmp','');
+            }
+            $config=file_get_contents('inc/config.tmp');
+            $config=json_decode($config,true);
+            if(isset($config['validtion']) && $config['validtion']==true){
+                session('validtion','true');
+            }else{
+                session('validtion','false');
+            }
+            if(session('validtion')!='true'){
+                include(theme::file('validtion.php'));
+                exit();
+            }
+        }
+        if(!$el2){
+            $el2='index';
+        }
+        if($el2 == 'index'){
+            //include('inc/classes/update.php');
+            if(update::check()){
+                header::Go(url('admin/update'));
+            }
+        }
+        if(is_file("pages/admin/{$el2}.php")){
+            if(in_array($el2,adminpanel::$GlobalPages)){
+                $check_Permission=true;
+            }else{
+                $check_Permission=adminpanel::check_Permission('bool',$el2);
+             }
+            if($check_Permission){
+                include("pages/admin/{$el2}.php");
+            }else{
+                include("pages/noaccess.php");
+            }  
+        }else{
+            include("pages/noaccess.php");
+        }
+    }
+    } else {
+        include("pages/noaccess.php");
+		}
+?>

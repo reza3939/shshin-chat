@@ -1,0 +1,1 @@
+<center><script language="javascript" src="http://pichAk.Net/blogcod/dictionary/dic/cod2.php?width=1&border=777777&bgcolor=EFEFEF&tcolor=A82A11"></script></center>
